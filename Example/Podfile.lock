@@ -1,0 +1,16 @@
+PODS:
+  - HTBaseModule (0.1.0)
+
+DEPENDENCIES:
+  - HTBaseModule (from `../`)
+
+EXTERNAL SOURCES:
+  HTBaseModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HTBaseModule: 439d769e4d05db3c91c17593dc6a1d5361a217f6
+
+PODFILE CHECKSUM: 2b8d2c953aa9c35a7c2e0b5b2a5040d6aa742a3c
+
+COCOAPODS: 1.9.1
