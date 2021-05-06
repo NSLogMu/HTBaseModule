@@ -3,20 +3,37 @@
   "version": "0.1.0",
   "summary": "A short description of HTBaseModule.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/872365538@qq.com/HTBaseModule",
+  "homepage": "https://github.com/NSLogMu/HTBaseModule",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "872365538@qq.com": "872365538@qq.com"
+    "NSLogMu": "872365538@qq.com"
   },
   "source": {
-    "git": "https://github.com/872365538@qq.com/HTBaseModule.git",
+    "git": "https://github.com/NSLogMu/HTBaseModule.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "HTBaseModule/Classes/**/*"
+  "source_files": "HTBaseModule/Classes/**/*",
+  "dependencies": {
+    "MBProgressHUD": [
+      "~> 1.0.0"
+    ],
+    "Masonry": [
+      "~> 0.6.2"
+    ],
+    "AFNetworking": [
+      "~> 4.0"
+    ],
+    "YYKit": [
+
+    ],
+    "MJExtension": [
+      "~> 2.5.6"
+    ]
+  }
 }

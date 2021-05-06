@@ -6,6 +6,7 @@
 //
 
 #import "HTRegexTool.h"
+#import "AFNetworkReachabilityManager.h"
 
 @implementation HTRegexTool
 //邮箱===
@@ -216,4 +217,31 @@
     return [soliderID evaluateWithObject:text];
 }
 
+//如果想要判断设备是ipad
++ (BOOL)getIsIpad
+{
+    NSString *deviceType = [UIDevice currentDevice].model;
+    
+    if([deviceType isEqualToString:@"iPhone"]) {
+        //iPhone
+        return NO;
+    }
+    else if([deviceType isEqualToString:@"iPod touch"]) {
+        //iPod Touch
+        return NO;
+    }
+    else if([deviceType isEqualToString:@"iPad"]) {
+        //iPad
+        return YES;
+    }
+    return NO;
+}
+
++ (BOOL)isNetReachable{
+    if ([AFNetworkReachabilityManager sharedManager].networkReachabilityStatus == AFNetworkReachabilityStatusUnknown) {
+        return YES;
+    } else {
+        return [[AFNetworkReachabilityManager sharedManager] isReachable];
+    }
+}
 @end

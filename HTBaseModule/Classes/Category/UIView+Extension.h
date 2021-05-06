@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 typedef enum : NSUInteger {
     LeShadowPathTop,
     LeShadowPathBottom,
@@ -14,6 +15,7 @@ typedef enum : NSUInteger {
     LeShadowPathCommon,
     LeShadowPathAround,
 } LeShadowPathType;
+
 
 @interface UIView (Extension)
 @property (nonatomic, assign) CGFloat x;
@@ -24,6 +26,11 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) CGFloat centerY;
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) CGPoint origin;
+//@property (nonatomic, assign) CGPoint origin;
+
+
+// 虚线
++ (void)drawDashLine:(UIView *)lineView lineLength:(int)lineLength lineSpacing:(int)lineSpacing lineColor:(UIColor *)lineColor;
 
 - (CGFloat)left;
 - (void)setLeft:(CGFloat)x;
@@ -34,8 +41,15 @@ typedef enum : NSUInteger {
 - (CGFloat)bottom;
 - (void)setBottom:(CGFloat)bottom;
 
+
+
 - (UIViewController *)getParentviewController;
-// 虚线
-+ (void)drawDashLine:(UIView *)lineView lineLength:(int)lineLength lineSpacing:(int)lineSpacing lineColor:(UIColor *)lineColor;
+
+
 - (void)viewShadowPathWithColor:(UIColor *)shadowColor shadowOpacity:(CGFloat)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowPathType:(LeShadowPathType)shadowPathType shadowPathWidth:(CGFloat)shadowPathWidth;
+@end
+@interface UtilityHelper : NSObject {
+    
+}
++ (UIColor *) colorWithHexString: (NSString *) stringToConvert;
 @end

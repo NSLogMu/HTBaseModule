@@ -7,6 +7,7 @@
 
 #ifndef HTPublicDefine_h
 #define HTPublicDefine_h
+
 //返回安全的字符串
 #define kSafeString(str) str.length > 0 ? str : @""
 
@@ -32,15 +33,44 @@
 
 //颜色
 #define UIColorFromHexA(hexValue, a)     [UIColor colorWithRed:(((hexValue & 0xFF0000) >> 16))/255.0f green:(((hexValue & 0xFF00) >> 8))/255.0f blue:((hexValue & 0xFF))/255.0f alpha:a]
-#define UIColorFromHex(hexValue)        UIColorFromHexA(hexValue, 1.0f)
 #define MY_COLOR_RGBA(aR,aG,aB,aA)  [UIColor colorWithRed:aR/255.0 green:aG/255.0 blue:aB/255.0 alpha:aA]
 #define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 #define UTILITYCOLOR(a) [UtilityHelper colorWithHexString:(a)]
-
+#define NAVBackgroundColor UTILITYCOLOR(@"#ffffff")
+#define NAVTitleColor UTILITYCOLOR(@"#000000")
+#define PlaceholderColor UTILITYCOLOR(@"#BABCC4")
+#define TextColor UTILITYCOLOR(@"#333333")
+#define LineColor UTILITYCOLOR(@"#F9F9FA")
+#define MainColor UTILITYCOLOR(@"#F76B1C")
+#define QianColor UTILITYCOLOR(@"#FCE6D6")
+#define UnEnableColor UTILITYCOLOR(@"#F6BE95")
+#define FuColor UTILITYCOLOR(@"#888888")
+#define kUIToneTextColor UTILITYCOLOR(@"#666666") //UI整体文字色调 与背景颜色对应
+#define kStatusBarStyle UIStatusBarStyleLightContent //状态栏样式
 
 #define kUserDefaults [NSUserDefaults standardUserDefaults]
 #define LZJNotificationCenter [NSNotificationCenter defaultCenter]
 #define WEAKSELF  typeof(self) __weak weakSelf=self;
+
+
+#define TERMINALCODE  [NSString stringWithFormat:@"lesmart1%@",[PLDeviceInfo sharedInstance].deviceID]
+
+//相关key
+#define ChangeIPAddressKey @"ChangeIPAddressKey"
+
+#pragma mark -Log相关
+
+#ifdef DEBUG
+
+#define kLog(...)                   NSLog(__VA_ARGS__);   // 普通Log
+#define kLog_Method(format, ...)        printf("[%s] %s [第%d行] %s", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+#else
+
+#define kLog(...)  ;
+#define kLog_Method(format, ...)        printf("[%s] %s [第%d行] %s", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+
+#endif
+
 
 #endif /* HTPublicDefine_h */

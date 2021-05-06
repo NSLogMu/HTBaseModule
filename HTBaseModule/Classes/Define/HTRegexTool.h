@@ -31,6 +31,12 @@
 
 //校验只能输数字
 + (BOOL)validateOnlyNumber: (NSString *)text;
+
+//如果想要判断设备是ipad
++ (BOOL)getIsIpad;
+
+//判断网络连接
++ (BOOL)isNetReachable;
 @end
 
 

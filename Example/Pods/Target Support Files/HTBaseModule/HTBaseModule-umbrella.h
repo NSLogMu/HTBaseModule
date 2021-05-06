@@ -10,6 +10,13 @@
 #endif
 #endif
 
+#import "HTBaseNavigationController.h"
+#import "HTBaseViewController.h"
+#import "UITableView+AllowsHeaderViewsToFloat.h"
+#import "UIView+Extension.h"
+#import "UIViewController+Public.h"
+#import "HTPublicDefine.h"
+#import "HTRegexTool.h"
 
 FOUNDATION_EXPORT double HTBaseModuleVersionNumber;
 FOUNDATION_EXPORT const unsigned char HTBaseModuleVersionString[];

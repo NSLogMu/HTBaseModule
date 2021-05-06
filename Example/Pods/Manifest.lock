@@ -1,16 +1,55 @@
 PODS:
-  - HTBaseModule (0.1.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - HTBaseModule (0.1.0):
+    - AFNetworking (~> 4.0)
+    - Masonry (~> 0.6.2)
+    - MBProgressHUD (~> 1.0.0)
+    - MJExtension (~> 2.5.6)
+    - YYKit
+  - Masonry (0.6.4)
+  - MBProgressHUD (1.0.0)
+  - MJExtension (2.5.16)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - HTBaseModule (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - YYKit
 
 EXTERNAL SOURCES:
   HTBaseModule:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HTBaseModule: 439d769e4d05db3c91c17593dc6a1d5361a217f6
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  HTBaseModule: a1c571585ef6b27bb4745bcdaa76a78e79022586
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 2b8d2c953aa9c35a7c2e0b5b2a5040d6aa742a3c
+PODFILE CHECKSUM: 78c409c39d7097bff0ae1596542530af1eedcd1f
 
 COCOAPODS: 1.9.1
