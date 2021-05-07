@@ -7,6 +7,8 @@
 
 #import "HTBaseTabBarController.h"
 #import "HTBaseNavigationController.h"
+#import "HTBaseModuleHeader.h"
+
 @interface HTBaseTabBarController ()<UITabBarControllerDelegate>
 @property (nonatomic, assign) NSInteger  indexFlag; //记录上一次点击tabbar
 @property (nonatomic, strong) NSMutableArray *arry;

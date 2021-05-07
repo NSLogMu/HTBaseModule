@@ -9,7 +9,7 @@
 #import "PLAPIProxy.h"
 #import <AFNetworking.h>
 #import "PLRequestGenerator.h"
-
+#import "NSString+Extension.h"
 #define kFirstServiceKey    @"app_2017"
 
 @interface PLAPIProxy ()

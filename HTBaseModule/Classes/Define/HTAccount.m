@@ -6,6 +6,8 @@
 //
 
 #import "HTAccount.h"
+#import "MJExtension.h"
+
 @implementation HTAccount
 MJCodingImplementation
 

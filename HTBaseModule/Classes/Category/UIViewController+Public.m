@@ -6,6 +6,7 @@
 //
 
 #import "UIViewController+Public.h"
+#import "HTBaseModuleHeader.h"
 
 @implementation UIViewController (Public)
 

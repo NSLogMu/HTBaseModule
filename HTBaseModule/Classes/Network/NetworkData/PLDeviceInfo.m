@@ -13,9 +13,8 @@
 #import <ifaddrs.h>
 #import <arpa/inet.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
-
 #import <Photos/Photos.h>
-
+#import "NSString+Extension.h"
 #define kKeyBindKeychainUUID @"iOSBindUUID"
 #define kKeyBindKeychainServiceName @"iOSBindKeychainServiceName"
 

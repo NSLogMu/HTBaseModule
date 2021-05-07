@@ -8,6 +8,7 @@
 
 #import "FirstService.h"
 #import "APPEnvironmentConfig.h"
+#import "HTBaseModuleHeader.h"
 
 @interface FirstService()
 

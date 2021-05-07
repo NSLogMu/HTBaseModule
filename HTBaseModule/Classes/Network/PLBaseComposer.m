@@ -7,7 +7,8 @@
 //
 
 #import "PLBaseComposer.h"
-
+#import "PLService.h"
+#import "PLServiceFactory.h"
 @implementation PLBaseComposer
 
 

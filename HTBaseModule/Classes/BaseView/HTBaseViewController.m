@@ -7,6 +7,7 @@
 
 #import "HTBaseViewController.h"
 #import "HUDHelp.h"
+#import "HTBaseModuleHeader.h"
 #define kLoadingTimer               1.5
 @interface HTBaseViewController (){
     // 用于记录加载中画面时间，时间至少需要停留1秒

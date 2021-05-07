@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "PLService.h"
+#import "HTBaseModuleHeader.h"
 
 extern NSString * const kFirstService;
 extern NSString * const kFOService;

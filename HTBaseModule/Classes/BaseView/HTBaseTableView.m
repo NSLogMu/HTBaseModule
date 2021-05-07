@@ -6,7 +6,7 @@
 //
 
 #import "HTBaseTableView.h"
-
+#import "HTBaseModuleHeader.h"
 @implementation HTBaseTableView
 
 + (instancetype)tableViewPlainStyle {
