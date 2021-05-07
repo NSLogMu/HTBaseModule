@@ -6,7 +6,7 @@
 //
 
 #import "HUDHelp.h"
-#import <MBProgressHUD/MBProgressHUD.h>
+#import "MBProgressHUD.h"
 static const NSUInteger TipSecond = 1.5;
 
 @implementation HUDHelp

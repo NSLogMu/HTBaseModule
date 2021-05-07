@@ -7,7 +7,7 @@
 //
 
 #import "PLAPPCacheHelper.h"
-#import <YYCache.h>
+#import "YYCache.h"
 static NSString *const kUserCache = @"INFO_Cache";
 @implementation PLAPPCacheHelper
 
