@@ -7,7 +7,7 @@
 //
 
 #import "PLRequestGenerator.h"
-#import <AFNetworking.h>
+#import "AFNetworking.h"
 #import "NSURLRequest+PLNetworkingMethods.h"
 #import "PLServiceFactory.h"
 
