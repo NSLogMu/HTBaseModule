@@ -7,6 +7,6 @@
 
 #import "HTAccount.h"
 @implementation HTAccount
-//MJCodingImplementation
+MJCodingImplementation
 
 @end
