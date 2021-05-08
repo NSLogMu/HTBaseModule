@@ -6,9 +6,6 @@
 //
 
 #import "HTBaseNavigationController.h"
-#import "UIView+Extension.h"
-#import "NSString+Extension.h"
-#import "UIImage+Extension.h"
 #import "HTBaseModuleHeader.h"
 
 @interface HTBaseNavigationController ()

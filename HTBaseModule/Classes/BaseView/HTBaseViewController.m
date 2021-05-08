@@ -6,7 +6,6 @@
 //
 
 #import "HTBaseViewController.h"
-#import "HUDHelp.h"
 #import "HTBaseModuleHeader.h"
 #define kLoadingTimer               1.5
 @interface HTBaseViewController (){

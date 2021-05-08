@@ -18,4 +18,6 @@
 #import "MJExtension.h"
 #import "Masonry.h"
 #import "HTAccountTool.h"
+#import "HUDHelp.h"
+#import "UIImage+Extension.h"
 #endif /* HTBaseModuleHeader_h */
