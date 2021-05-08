@@ -1,6 +1,6 @@
 {
   "name": "HTBaseModule",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "summary": "A short description of HTBaseModule.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/NSLogMu/HTBaseModule",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/NSLogMu/HTBaseModule.git",
-    "tag": "0.2.1"
+    "tag": "0.2.3"
   },
   "platforms": {
     "ios": "9.0"
@@ -39,41 +39,41 @@
   "subspecs": [
     {
       "name": "BaseView",
-      "source_files": "HTBaseModule/Classes/BaseView/*.*"
+      "source_files": "HTBaseModule/Classes/BaseView/*.{h,m}"
     },
     {
       "name": "Category",
-      "source_files": "HTBaseModule/Classes/Category/*.*"
+      "source_files": "HTBaseModule/Classes/Category/*.{h,m}"
     },
     {
       "name": "Define",
-      "source_files": "HTBaseModule/Classes/Define/*.*"
+      "source_files": "HTBaseModule/Classes/Define/*.{h,m}"
     },
     {
       "name": "Network",
-      "source_files": "HTBaseModule/Classes/Network/*.*",
+      "source_files": "HTBaseModule/Classes/Network/*.{h,m}",
       "subspecs": [
         {
           "name": "NetworkData",
-          "source_files": "HTBaseModule/Classes/Network/NetworkData/*.*"
+          "source_files": "HTBaseModule/Classes/Network/NetworkData/*.{h,m}"
         },
         {
           "name": "PLNetworking",
-          "source_files": "HTBaseModule/Classes/Network/PLNetworking/*.*"
+          "source_files": "HTBaseModule/Classes/Network/PLNetworking/*.{h,m}"
         },
         {
           "name": "PLNetworkingConfig",
-          "source_files": "HTBaseModule/Classes/Network/PLNetworkingConfig/*.*"
+          "source_files": "HTBaseModule/Classes/Network/PLNetworkingConfig/*.{h,m}"
         },
         {
           "name": "Reachability",
-          "source_files": "HTBaseModule/Classes/Network/Reachability/*.*"
+          "source_files": "HTBaseModule/Classes/Network/Reachability/*.{h,m}"
         }
       ]
     },
     {
       "name": "Tools",
-      "source_files": "HTBaseModule/Classes/Tools/*.*"
+      "source_files": "HTBaseModule/Classes/Tools/*.{h,m}"
     }
   ]
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTBaseModule'
-  s.version          = '0.2.3'
+  s.version          = '0.2.4'
   s.summary          = 'A short description of HTBaseModule.'
 
 # This description is used to generate tags and improve search results.
@@ -37,36 +37,40 @@ TODO: Add long description of the pod here.
   # }
   
   s.subspec 'BaseView' do |ss|
-       ss.source_files = 'HTBaseModule/Classes/BaseView/*.*'
+       ss.source_files = 'HTBaseModule/Classes/BaseView/*.{h,m}'
     end
 
   s.subspec 'Category' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Category/*.*'
+     ss.source_files = 'HTBaseModule/Classes/Category/*.{h,m}'
   end
+  
   s.subspec 'Define' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Define/*.*'
+     ss.source_files = 'HTBaseModule/Classes/Define/*.{h,m}'
   end
+  
   s.subspec 'Network' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Network/*.*'
+     ss.source_files = 'HTBaseModule/Classes/Network/*.{h,m}'
      
      ss.subspec 'NetworkData' do |sss|
-     sss.source_files = 'HTBaseModule/Classes/Network/NetworkData/*.*'
+     sss.source_files = 'HTBaseModule/Classes/Network/NetworkData/*.{h,m}'
      end
      
      ss.subspec 'PLNetworking' do |sss|
-     sss.source_files = 'HTBaseModule/Classes/Network/PLNetworking/*.*'
+     sss.source_files = 'HTBaseModule/Classes/Network/PLNetworking/*.{h,m}'
      end
      
      ss.subspec 'PLNetworkingConfig' do |sss|
-     sss.source_files = 'HTBaseModule/Classes/Network/PLNetworkingConfig/*.*'
+     sss.source_files = 'HTBaseModule/Classes/Network/PLNetworkingConfig/*.{h,m}'
      end
      
      ss.subspec 'Reachability' do |sss|
-     sss.source_files = 'HTBaseModule/Classes/Network/Reachability/*.*'
+     sss.source_files = 'HTBaseModule/Classes/Network/Reachability/*.{h,m}'
      end
+     
   end
+  
   s.subspec 'Tools' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Tools/*.*'
+     ss.source_files = 'HTBaseModule/Classes/Tools/*.{h,m}'
   end
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
