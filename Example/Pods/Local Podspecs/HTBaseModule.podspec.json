@@ -1,6 +1,6 @@
 {
   "name": "HTBaseModule",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "summary": "A short description of HTBaseModule.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/NSLogMu/HTBaseModule",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/NSLogMu/HTBaseModule.git",
-    "tag": "0.1.6"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "HTBaseModule/Classes/**/*",
+  "source_files": "HTBaseModule/Classes/*.*",
   "dependencies": {
     "MBProgressHUD": [
       "~> 1.0.0"
@@ -35,5 +35,23 @@
     "MJExtension": [
       "~> 2.5.6"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "BaseView",
+      "source_files": "HTBaseModule/Classes/BaseView/*.*"
+    },
+    {
+      "name": "Category",
+      "source_files": "HTBaseModule/Classes/Category/*.*"
+    },
+    {
+      "name": "Define",
+      "source_files": "HTBaseModule/Classes/Define/*.*"
+    },
+    {
+      "name": "Network",
+      "source_files": "HTBaseModule/Classes/Network/*.*"
+    }
+  ]
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTBaseModule'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A short description of HTBaseModule.'
 
 # This description is used to generate tags and improve search results.
@@ -30,12 +30,25 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'HTBaseModule/Classes/**/*'
+  s.source_files = 'HTBaseModule/Classes/*.*'
   
   # s.resource_bundles = {
   #   'HTBaseModule' => ['HTBaseModule/Assets/*.png']
   # }
+  
+  s.subspec 'BaseView' do |ss|
+       ss.source_files = 'HTBaseModule/Classes/BaseView/*.*'
+    end
 
+  s.subspec 'Category' do |ss|
+     ss.source_files = 'HTBaseModule/Classes/Category/*.*'
+  end
+  s.subspec 'Define' do |ss|
+     ss.source_files = 'HTBaseModule/Classes/Define/*.*'
+  end
+  s.subspec 'Network' do |ss|
+     ss.source_files = 'HTBaseModule/Classes/Network/*.*'
+  end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'MBProgressHUD', '~> 1.0.0'

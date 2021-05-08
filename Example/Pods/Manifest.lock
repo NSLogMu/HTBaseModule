@@ -14,7 +14,35 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - HTBaseModule (0.1.6):
+  - HTBaseModule (0.2.0):
+    - AFNetworking (~> 4.0)
+    - HTBaseModule/BaseView (= 0.2.0)
+    - HTBaseModule/Category (= 0.2.0)
+    - HTBaseModule/Define (= 0.2.0)
+    - HTBaseModule/Network (= 0.2.0)
+    - Masonry (~> 0.6.2)
+    - MBProgressHUD (~> 1.0.0)
+    - MJExtension (~> 2.5.6)
+    - YYKit
+  - HTBaseModule/BaseView (0.2.0):
+    - AFNetworking (~> 4.0)
+    - Masonry (~> 0.6.2)
+    - MBProgressHUD (~> 1.0.0)
+    - MJExtension (~> 2.5.6)
+    - YYKit
+  - HTBaseModule/Category (0.2.0):
+    - AFNetworking (~> 4.0)
+    - Masonry (~> 0.6.2)
+    - MBProgressHUD (~> 1.0.0)
+    - MJExtension (~> 2.5.6)
+    - YYKit
+  - HTBaseModule/Define (0.2.0):
+    - AFNetworking (~> 4.0)
+    - Masonry (~> 0.6.2)
+    - MBProgressHUD (~> 1.0.0)
+    - MJExtension (~> 2.5.6)
+    - YYKit
+  - HTBaseModule/Network (0.2.0):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
@@ -44,7 +72,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  HTBaseModule: 0d5e9bbdba698531293c0ddb4ff8044cfbc6724f
+  HTBaseModule: ad2c211831f424dc1231e7945bde239a87e536b4
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
