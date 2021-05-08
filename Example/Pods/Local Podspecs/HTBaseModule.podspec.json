@@ -1,6 +1,6 @@
 {
   "name": "HTBaseModule",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "summary": "A short description of HTBaseModule.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/NSLogMu/HTBaseModule",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/NSLogMu/HTBaseModule.git",
-    "tag": "0.2.4"
+    "tag": "0.2.5"
   },
   "platforms": {
     "ios": "9.0"
@@ -39,13 +39,11 @@
   "subspecs": [
     {
       "name": "BaseView",
-      "source_files": "HTBaseModule/Classes/BaseView/*.{h,m}",
-      "public_header_files": "HTBaseModule/Classes/HTBaseModuleHeader.h"
+      "source_files": "HTBaseModule/Classes/BaseView/*.{h,m}"
     },
     {
       "name": "Category",
-      "source_files": "HTBaseModule/Classes/Category/*.{h,m}",
-      "public_header_files": "HTBaseModule/Classes/HTBaseModuleHeader.h"
+      "source_files": "HTBaseModule/Classes/Category/*.{h,m}"
     },
     {
       "name": "Define",
@@ -54,26 +52,7 @@
     },
     {
       "name": "Network",
-      "source_files": "HTBaseModule/Classes/Network/*.{h,m}",
-      "public_header_files": "HTBaseModule/Classes/HTBaseModuleHeader.h",
-      "subspecs": [
-        {
-          "name": "NetworkData",
-          "source_files": "HTBaseModule/Classes/Network/NetworkData/*.{h,m}"
-        },
-        {
-          "name": "PLNetworking",
-          "source_files": "HTBaseModule/Classes/Network/PLNetworking/*.{h,m}"
-        },
-        {
-          "name": "PLNetworkingConfig",
-          "source_files": "HTBaseModule/Classes/Network/PLNetworkingConfig/*.{h,m}"
-        },
-        {
-          "name": "Reachability",
-          "source_files": "HTBaseModule/Classes/Network/Reachability/*.{h,m}"
-        }
-      ]
+      "source_files": "HTBaseModule/Classes/Network/*.{h,m}"
     },
     {
       "name": "Tools",

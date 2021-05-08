@@ -1,1 +1,1 @@
-../../../../../HTBaseModule/Classes/Network/NetworkData/PLDeviceInfo.h
+../../../../../HTBaseModule/Classes/Network/PLDeviceInfo.h

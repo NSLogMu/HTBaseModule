@@ -14,70 +14,42 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - HTBaseModule (0.2.4):
+  - HTBaseModule (0.2.5):
     - AFNetworking (~> 4.0)
-    - HTBaseModule/BaseView (= 0.2.4)
-    - HTBaseModule/Category (= 0.2.4)
-    - HTBaseModule/Define (= 0.2.4)
-    - HTBaseModule/Network (= 0.2.4)
-    - HTBaseModule/Tools (= 0.2.4)
+    - HTBaseModule/BaseView (= 0.2.5)
+    - HTBaseModule/Category (= 0.2.5)
+    - HTBaseModule/Define (= 0.2.5)
+    - HTBaseModule/Network (= 0.2.5)
+    - HTBaseModule/Tools (= 0.2.5)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/BaseView (0.2.4):
-    - AFNetworking (~> 4.0)
-    - Masonry (~> 0.6.2)
-    - MBProgressHUD (~> 1.0.0)
-    - MJExtension (~> 2.5.6)
-    - YYKit
-  - HTBaseModule/Category (0.2.4):
+  - HTBaseModule/BaseView (0.2.5):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/Define (0.2.4):
+  - HTBaseModule/Category (0.2.5):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/Network (0.2.4):
-    - AFNetworking (~> 4.0)
-    - HTBaseModule/Network/NetworkData (= 0.2.4)
-    - HTBaseModule/Network/PLNetworking (= 0.2.4)
-    - HTBaseModule/Network/PLNetworkingConfig (= 0.2.4)
-    - HTBaseModule/Network/Reachability (= 0.2.4)
-    - Masonry (~> 0.6.2)
-    - MBProgressHUD (~> 1.0.0)
-    - MJExtension (~> 2.5.6)
-    - YYKit
-  - HTBaseModule/Network/NetworkData (0.2.4):
+  - HTBaseModule/Define (0.2.5):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/Network/PLNetworking (0.2.4):
+  - HTBaseModule/Network (0.2.5):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/Network/PLNetworkingConfig (0.2.4):
-    - AFNetworking (~> 4.0)
-    - Masonry (~> 0.6.2)
-    - MBProgressHUD (~> 1.0.0)
-    - MJExtension (~> 2.5.6)
-    - YYKit
-  - HTBaseModule/Network/Reachability (0.2.4):
-    - AFNetworking (~> 4.0)
-    - Masonry (~> 0.6.2)
-    - MBProgressHUD (~> 1.0.0)
-    - MJExtension (~> 2.5.6)
-    - YYKit
-  - HTBaseModule/Tools (0.2.4):
+  - HTBaseModule/Tools (0.2.5):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
@@ -107,7 +79,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  HTBaseModule: 63f6b56f052fefe91bcd6b8e203124a543ce746b
+  HTBaseModule: 1579fd555986b16f80ca5645b7d4f8766e144a07
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
