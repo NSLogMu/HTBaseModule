@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTBaseModule'
-  s.version          = '0.2.1'
+  s.version          = '0.2.3'
   s.summary          = 'A short description of HTBaseModule.'
 
 # This description is used to generate tags and improve search results.
@@ -48,21 +48,25 @@ TODO: Add long description of the pod here.
   end
   s.subspec 'Network' do |ss|
      ss.source_files = 'HTBaseModule/Classes/Network/*.*'
+     
+     ss.subspec 'NetworkData' do |sss|
+     sss.source_files = 'HTBaseModule/Classes/Network/NetworkData/*.*'
+     end
+     
+     ss.subspec 'PLNetworking' do |sss|
+     sss.source_files = 'HTBaseModule/Classes/Network/PLNetworking/*.*'
+     end
+     
+     ss.subspec 'PLNetworkingConfig' do |sss|
+     sss.source_files = 'HTBaseModule/Classes/Network/PLNetworkingConfig/*.*'
+     end
+     
+     ss.subspec 'Reachability' do |sss|
+     sss.source_files = 'HTBaseModule/Classes/Network/Reachability/*.*'
+     end
   end
   s.subspec 'Tools' do |ss|
      ss.source_files = 'HTBaseModule/Classes/Tools/*.*'
-  end
-  s.subspec 'NetworkData' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Network/NetworkData/*.*'
-  end
-  s.subspec 'PLNetworking' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Network/PLNetworking/*.*'
-  end
-  s.subspec 'PLNetworkingConfig' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Network/PLNetworkingConfig/*.*'
-  end
-  s.subspec 'Reachability' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Network/Reachability/*.*'
   end
   
   # s.public_header_files = 'Pod/Classes/**/*.h'

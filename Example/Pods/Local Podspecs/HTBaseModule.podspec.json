@@ -51,27 +51,29 @@
     },
     {
       "name": "Network",
-      "source_files": "HTBaseModule/Classes/Network/*.*"
+      "source_files": "HTBaseModule/Classes/Network/*.*",
+      "subspecs": [
+        {
+          "name": "NetworkData",
+          "source_files": "HTBaseModule/Classes/Network/NetworkData/*.*"
+        },
+        {
+          "name": "PLNetworking",
+          "source_files": "HTBaseModule/Classes/Network/PLNetworking/*.*"
+        },
+        {
+          "name": "PLNetworkingConfig",
+          "source_files": "HTBaseModule/Classes/Network/PLNetworkingConfig/*.*"
+        },
+        {
+          "name": "Reachability",
+          "source_files": "HTBaseModule/Classes/Network/Reachability/*.*"
+        }
+      ]
     },
     {
       "name": "Tools",
       "source_files": "HTBaseModule/Classes/Tools/*.*"
-    },
-    {
-      "name": "NetworkData",
-      "source_files": "HTBaseModule/Classes/Network/NetworkData/*.*"
-    },
-    {
-      "name": "PLNetworking",
-      "source_files": "HTBaseModule/Classes/Network/PLNetworking/*.*"
-    },
-    {
-      "name": "PLNetworkingConfig",
-      "source_files": "HTBaseModule/Classes/Network/PLNetworkingConfig/*.*"
-    },
-    {
-      "name": "Reachability",
-      "source_files": "HTBaseModule/Classes/Network/Reachability/*.*"
     }
   ]
 }

@@ -20,10 +20,6 @@ PODS:
     - HTBaseModule/Category (= 0.2.1)
     - HTBaseModule/Define (= 0.2.1)
     - HTBaseModule/Network (= 0.2.1)
-    - HTBaseModule/NetworkData (= 0.2.1)
-    - HTBaseModule/PLNetworking (= 0.2.1)
-    - HTBaseModule/PLNetworkingConfig (= 0.2.1)
-    - HTBaseModule/Reachability (= 0.2.1)
     - HTBaseModule/Tools (= 0.2.1)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
@@ -49,29 +45,33 @@ PODS:
     - YYKit
   - HTBaseModule/Network (0.2.1):
     - AFNetworking (~> 4.0)
+    - HTBaseModule/Network/NetworkData (= 0.2.1)
+    - HTBaseModule/Network/PLNetworking (= 0.2.1)
+    - HTBaseModule/Network/PLNetworkingConfig (= 0.2.1)
+    - HTBaseModule/Network/Reachability (= 0.2.1)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/NetworkData (0.2.1):
+  - HTBaseModule/Network/NetworkData (0.2.1):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/PLNetworking (0.2.1):
+  - HTBaseModule/Network/PLNetworking (0.2.1):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/PLNetworkingConfig (0.2.1):
+  - HTBaseModule/Network/PLNetworkingConfig (0.2.1):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/Reachability (0.2.1):
+  - HTBaseModule/Network/Reachability (0.2.1):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
@@ -107,7 +107,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  HTBaseModule: 3d44838415b784f4976d0b829e995a451d59e919
+  HTBaseModule: daf124a5aa29054a4bf0ac7855d88efc837cddb3
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e
