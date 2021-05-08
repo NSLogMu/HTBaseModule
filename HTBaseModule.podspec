@@ -49,6 +49,22 @@ TODO: Add long description of the pod here.
   s.subspec 'Network' do |ss|
      ss.source_files = 'HTBaseModule/Classes/Network/*.*'
   end
+  s.subspec 'Tools' do |ss|
+     ss.source_files = 'HTBaseModule/Classes/Tools/*.*'
+  end
+  s.subspec 'NetworkData' do |ss|
+     ss.source_files = 'HTBaseModule/Classes/Network/NetworkData/*.*'
+  end
+  s.subspec 'PLNetworking' do |ss|
+     ss.source_files = 'HTBaseModule/Classes/Network/PLNetworking/*.*'
+  end
+  s.subspec 'PLNetworkingConfig' do |ss|
+     ss.source_files = 'HTBaseModule/Classes/Network/PLNetworkingConfig/*.*'
+  end
+  s.subspec 'Reachability' do |ss|
+     ss.source_files = 'HTBaseModule/Classes/Network/Reachability/*.*'
+  end
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'MBProgressHUD', '~> 1.0.0'

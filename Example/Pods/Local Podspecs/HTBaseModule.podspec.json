@@ -1,6 +1,6 @@
 {
   "name": "HTBaseModule",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "summary": "A short description of HTBaseModule.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/NSLogMu/HTBaseModule",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/NSLogMu/HTBaseModule.git",
-    "tag": "0.2.0"
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "9.0"
@@ -52,6 +52,26 @@
     {
       "name": "Network",
       "source_files": "HTBaseModule/Classes/Network/*.*"
+    },
+    {
+      "name": "Tools",
+      "source_files": "HTBaseModule/Classes/Tools/*.*"
+    },
+    {
+      "name": "NetworkData",
+      "source_files": "HTBaseModule/Classes/Network/NetworkData/*.*"
+    },
+    {
+      "name": "PLNetworking",
+      "source_files": "HTBaseModule/Classes/Network/PLNetworking/*.*"
+    },
+    {
+      "name": "PLNetworkingConfig",
+      "source_files": "HTBaseModule/Classes/Network/PLNetworkingConfig/*.*"
+    },
+    {
+      "name": "Reachability",
+      "source_files": "HTBaseModule/Classes/Network/Reachability/*.*"
     }
   ]
 }
