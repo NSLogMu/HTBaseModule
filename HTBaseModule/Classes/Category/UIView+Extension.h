@@ -48,8 +48,4 @@ typedef enum : NSUInteger {
 
 - (void)viewShadowPathWithColor:(UIColor *)shadowColor shadowOpacity:(CGFloat)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowPathType:(LeShadowPathType)shadowPathType shadowPathWidth:(CGFloat)shadowPathWidth;
 @end
-@interface UtilityHelper : NSObject {
-    
-}
-+ (UIColor *) colorWithHexString: (NSString *) stringToConvert;
-@end
+

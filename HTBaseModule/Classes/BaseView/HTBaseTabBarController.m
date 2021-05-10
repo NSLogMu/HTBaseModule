@@ -7,8 +7,9 @@
 
 #import "HTBaseTabBarController.h"
 #import "HTBaseNavigationController.h"
-#import "HTBaseModuleHeader.h"
-
+#import "HTPublicDefine.h"
+#import "UIColor+HTHex.h"
+#import "HTRegexTool.h"
 @interface HTBaseTabBarController ()<UITabBarControllerDelegate>
 @property (nonatomic, assign) NSInteger  indexFlag; //记录上一次点击tabbar
 @property (nonatomic, strong) NSMutableArray *arry;
@@ -38,7 +39,7 @@
     tabFrame.size.height = height;
     tabFrame.origin.y = self.view.frame.size.height - height;
     self.tabBar.frame = tabFrame;
-    [self.tabBar setBarTintColor:NAVBackgroundColor];
+    [self.tabBar setBarTintColor:[UIColor colorWithHexString:NAVBackgroundColor alpha:1]];
     self.tabBar.translucent = NO;
 }
 
@@ -83,8 +84,8 @@
     }
     
     //title设置
-    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:UTILITYCOLOR(@"#929295"),NSFontAttributeName:[UIFont systemFontOfSize:10*SCALE_6]} forState:UIControlStateNormal];
-    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:MainColor,NSFontAttributeName:[UIFont systemFontOfSize:10*SCALE_6]} forState:UIControlStateSelected];
+    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#929295" alpha:1],NSFontAttributeName:[UIFont systemFontOfSize:10*SCALE_6]} forState:UIControlStateNormal];
+    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:MainColor alpha:1],NSFontAttributeName:[UIFont systemFontOfSize:10*SCALE_6]} forState:UIControlStateSelected];
     vc.tabBarItem.title = title;
     
     //小红点
@@ -110,7 +111,6 @@
         [self.arry removeAllObjects];
         for (UIView *btn in self.tabBar.subviews) {
             if ([btn isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-                btn.tag = btn.x;
                 [self.arry addObject:btn];
             }
         }

@@ -36,25 +36,23 @@
 #define MY_COLOR_RGBA(aR,aG,aB,aA)  [UIColor colorWithRed:aR/255.0 green:aG/255.0 blue:aB/255.0 alpha:aA]
 #define RGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
-#define UTILITYCOLOR(a) [UtilityHelper colorWithHexString:(a)]
-#define NAVBackgroundColor UTILITYCOLOR(@"#ffffff")
-#define NAVTitleColor UTILITYCOLOR(@"#000000")
-#define PlaceholderColor UTILITYCOLOR(@"#BABCC4")
-#define TextColor UTILITYCOLOR(@"#333333")
-#define LineColor UTILITYCOLOR(@"#F9F9FA")
-#define MainColor UTILITYCOLOR(@"#F76B1C")
-#define QianColor UTILITYCOLOR(@"#FCE6D6")
-#define UnEnableColor UTILITYCOLOR(@"#F6BE95")
-#define FuColor UTILITYCOLOR(@"#888888")
-#define kUIToneTextColor UTILITYCOLOR(@"#666666") //UI整体文字色调 与背景颜色对应
+
+#define NAVBackgroundColor @"#ffffff"
+#define NAVTitleColor @"#000000"
+#define PlaceholderColor @"#BABCC4"
+#define TextColor @"#333333"
+#define LineColor @"#F9F9FA"
+#define MainColor @"#F76B1C"
+#define QianColor @"#FCE6D6"
+#define UnEnableColor @"#F6BE95"
+#define FuColor @"#888888"
+#define kUIToneTextColor @"#666666" //UI整体文字色调 与背景颜色对应
 #define kStatusBarStyle UIStatusBarStyleLightContent //状态栏样式
 
 #define kUserDefaults [NSUserDefaults standardUserDefaults]
 #define LZJNotificationCenter [NSNotificationCenter defaultCenter]
 #define WEAKSELF  typeof(self) __weak weakSelf=self;
 
-
-#define TERMINALCODE  [NSString stringWithFormat:@"lesmart1%@",[PLDeviceInfo sharedInstance].deviceID]
 
 //相关key
 #define ChangeIPAddressKey @"ChangeIPAddressKey"

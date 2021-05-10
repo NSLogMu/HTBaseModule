@@ -1,6 +1,6 @@
 {
   "name": "HTBaseModule",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "summary": "A short description of HTBaseModule.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/NSLogMu/HTBaseModule",
@@ -13,12 +13,13 @@
   },
   "source": {
     "git": "https://github.com/NSLogMu/HTBaseModule.git",
-    "tag": "0.3.0"
+    "tag": "0.3.2"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "HTBaseModule/Classes/*.*",
+  "public_header_files": "HTBaseModule/Classes/HTBaseModuleHeader.h",
   "dependencies": {
     "MBProgressHUD": [
       "~> 1.0.0"
@@ -40,7 +41,13 @@
     {
       "name": "BaseView",
       "dependencies": {
+        "HTBaseModule/Category": [
+
+        ],
         "HTBaseModule/Define": [
+
+        ],
+        "HTBaseModule/Tools": [
 
         ]
       },
@@ -62,6 +69,9 @@
     {
       "name": "Network",
       "dependencies": {
+        "HTBaseModule/Category": [
+
+        ],
         "HTBaseModule/Define": [
 
         ]
@@ -70,11 +80,6 @@
     },
     {
       "name": "Tools",
-      "dependencies": {
-        "HTBaseModule/Define": [
-
-        ]
-      },
       "source_files": "HTBaseModule/Classes/Tools/*"
     }
   ]

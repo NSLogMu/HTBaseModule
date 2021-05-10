@@ -6,14 +6,16 @@
 //
 
 #import "HTBaseTableView.h"
-#import "HTBaseModuleHeader.h"
+#import "UIColor+HTHex.h"
+#import "Masonry.h"
+#import "HTPublicDefine.h"
 @implementation HTBaseTableView
 
 + (instancetype)tableViewPlainStyle {
     
     HTBaseTableView *_tableView = [[HTBaseTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     _tableView.backgroundColor = [UIColor clearColor];
-    _tableView.separatorColor = UTILITYCOLOR(@"#E6E6E6");
+    _tableView.separatorColor = [UIColor colorWithHexString:@"#E6E6E6" alpha:1];
     // 设置隐藏多余的线
     _tableView.sectionFooterHeight = 0;
     _tableView.tableFooterView = [[UIView alloc] init];
@@ -29,7 +31,7 @@
     _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, CGFLOAT_MIN)];   // 隐藏顶部多余的高度
     _tableView.backgroundColor = [UIColor clearColor];
     // 设置分割线的颜色
-    _tableView.separatorColor = UTILITYCOLOR(@"#E6E6E6");
+    _tableView.separatorColor = [UIColor colorWithHexString:@"#E6E6E6" alpha:1];
     // 设置隐藏多余的线
     _tableView.sectionFooterHeight = 0;
     _tableView.tableFooterView = [[UIView alloc] init];
@@ -63,7 +65,7 @@
                 make.height.mas_greaterThanOrEqualTo(5);
             }];
             UILabel *tipsLab = [[UILabel alloc]init];
-            tipsLab.textColor = UTILITYCOLOR(@"#797B84");
+            tipsLab.textColor = [UIColor colorWithHexString:@"#797B84" alpha:1];
             tipsLab.text = message;
             tipsLab.font = [UIFont systemFontOfSize:14*SCALE_6];
             tipsLab.textAlignment = NSTextAlignmentCenter;

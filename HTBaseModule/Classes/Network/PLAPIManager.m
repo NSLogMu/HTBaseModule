@@ -8,8 +8,9 @@
 
 #import "PLAPIManager.h"
 #import "PLAPIProxy.h"
-#import "PLServiceFactory.h"
+#import "NetworkModuleHeader.h"
 #import "PLCacheHelper.h"
+#import "HTRegexTool.h"
 #define PLCallAPI(REQUEST_METHOD, REQUEST_ID)                                                   \
 {                                                                                               \
 __weak typeof(self) weakSelf = self;                                                        \

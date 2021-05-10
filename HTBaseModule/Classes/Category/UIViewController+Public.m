@@ -6,8 +6,9 @@
 //
 
 #import "UIViewController+Public.h"
-#import "HTBaseModuleHeader.h"
-
+#import "UIView+Extension.h"
+#import "HTPublicDefine.h"
+#import "UIColor+HTHex.h"
 @implementation UIViewController (Public)
 
 //设置navgation bar title
@@ -39,7 +40,7 @@
     
     label_.frame = frame_;
     label_.font = [UIFont boldSystemFontOfSize:18*SCALE_6];
-    label_.textColor = NAVTitleColor;
+    label_.textColor = [UIColor colorWithHexString:NAVTitleColor alpha:1];
     label_.text = title;
     label_.adjustsFontSizeToFitWidth = YES;
     label_.backgroundColor = [UIColor clearColor];
@@ -73,7 +74,7 @@
     CGRect frame_ = CGRectMake(0, 15, 80, 15);
     label_.frame = frame_;
     label_.font = [UIFont systemFontOfSize:14*SCALE_6];
-    label_.textColor = MainColor;
+    label_.textColor =[UIColor colorWithHexString:MainColor alpha:1] ;
     label_.text = text;
     label_.backgroundColor = [UIColor clearColor];
     label_.textAlignment = NSTextAlignmentRight;
@@ -96,7 +97,7 @@
     CGRect frame_ = CGRectMake(0, 15, 80, 15);
     label_.frame = frame_;
     label_.font = [UIFont systemFontOfSize:14*SCALE_6];
-    label_.textColor = FuColor;
+    label_.textColor =[UIColor colorWithHexString:FuColor alpha:1] ;
     label_.text = text;
     label_.backgroundColor = [UIColor clearColor];
     label_.textAlignment = NSTextAlignmentLeft;

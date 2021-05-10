@@ -8,8 +8,9 @@
 
 #import "FirstService.h"
 #import "APPEnvironmentConfig.h"
-#import "HTBaseModuleHeader.h"
-
+#import "HTAccountTool.h"
+#import "NSString+Extension.h"
+#import "NetworkModuleHeader.h"
 @interface FirstService()
 
 @property (nonatomic, strong) NSArray *baseURLArray; // url环境
@@ -60,7 +61,7 @@
         return self.baseURLArray[[APPEnvironmentConfig appEnvironment]];
     }
     else {
-        kLog_Method(@"baseURL配置错误");
+//        kLog_Method(@"baseURL配置错误");
         return nil;
     }
 }
@@ -105,7 +106,7 @@
     
     HeaderFieldModel *header4 = [[HeaderFieldModel alloc] init];
     header4.headerKeyStr = @"TERMINAL-CODE";
-    header4.keyValueStr = TERMINALCODE;
+    header4.keyValueStr = [NSString stringWithFormat:@"lesmart1%@",[PLDeviceInfo sharedInstance].deviceID];
     [headerFieldArray addObject:header4];
     
     

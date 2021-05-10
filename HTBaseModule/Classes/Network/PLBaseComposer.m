@@ -7,8 +7,8 @@
 //
 
 #import "PLBaseComposer.h"
-#import "PLService.h"
-#import "PLServiceFactory.h"
+#import "NetworkModuleHeader.h"
+#import "NSString+Extension.h"
 @implementation PLBaseComposer
 
 

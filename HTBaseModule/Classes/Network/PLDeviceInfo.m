@@ -14,7 +14,7 @@
 #import <arpa/inet.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
 #import <Photos/Photos.h>
-#import "HTBaseModuleHeader.h"
+#import "NSString+Extension.h"
 #define kKeyBindKeychainUUID @"iOSBindUUID"
 #define kKeyBindKeychainServiceName @"iOSBindKeychainServiceName"
 

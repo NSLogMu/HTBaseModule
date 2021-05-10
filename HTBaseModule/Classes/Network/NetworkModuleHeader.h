@@ -71,5 +71,6 @@
 #import "PLAPIManager.h"
 #import "PLServiceFactory.h"
 #import "PLAPPCacheHelper.h"
+#import "PLDeviceInfo.h"
 
 #endif /* NetworkModuleHeader_h */

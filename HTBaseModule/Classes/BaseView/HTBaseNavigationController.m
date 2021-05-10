@@ -6,8 +6,8 @@
 //
 
 #import "HTBaseNavigationController.h"
-#import "HTBaseModuleHeader.h"
-
+#import "CatagoryHeader.h"
+#import "HTPublicDefine.h"
 @interface HTBaseNavigationController ()
 
 @end
@@ -17,13 +17,13 @@
 - (void)loadView {
     [super loadView];
     // bg.png为自己ps出来的想要的背景颜色。
-    [self.navigationBar setBackgroundImage:[UIImage imageWithColor:NAVBackgroundColor size:CGSizeMake(self.navigationBar.frame.size.width, self.navigationBar.frame.size.height + 20)]
+    [self.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithHexString:NAVBackgroundColor alpha:1] size:CGSizeMake(self.navigationBar.frame.size.width, self.navigationBar.frame.size.height + 20)]
                             forBarPosition:UIBarPositionAny
                                 barMetrics:UIBarMetricsDefault];
     [self.navigationBar setShadowImage:[UIImage new]];
     
     //title颜色和字体
-    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:NAVTitleColor,
+    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIImage imageWithColor:[UIColor colorWithHexString:NAVTitleColor alpha:1] size:CGSizeMake(self.navigationBar.frame.size.width, self.navigationBar.frame.size.height + 20)],
                                                NSFontAttributeName:[UIFont systemFontOfSize:18*SCALE_6]};
     
     //系统返回按钮图片设置
@@ -33,7 +33,7 @@
     }
     UIImage *image = [UIImage imageNamed:imageName];
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[image resizableImageWithCapInsets:UIEdgeInsetsMake(0, image.size.width-1, 0, 0)] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setTintColor:kUIToneTextColor];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithHexString:kUIToneTextColor alpha:1]];
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(5, 0)
                                                          forBarMetrics:UIBarMetricsDefault];
 }
