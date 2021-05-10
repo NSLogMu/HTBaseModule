@@ -39,43 +39,43 @@
   "subspecs": [
     {
       "name": "BaseView",
-      "source_files": "HTBaseModule/Classes/BaseView/*.{h,m}",
       "dependencies": {
         "HTBaseModule/Define": [
 
         ]
-      }
+      },
+      "source_files": "HTBaseModule/Classes/BaseView/*"
     },
     {
       "name": "Category",
-      "source_files": "HTBaseModule/Classes/Category/*.{h,m}",
       "dependencies": {
         "HTBaseModule/Define": [
 
         ]
-      }
+      },
+      "source_files": "HTBaseModule/Classes/Category/*"
     },
     {
       "name": "Define",
-      "source_files": "HTBaseModule/Classes/Define/*.{h,m}"
+      "source_files": "HTBaseModule/Classes/Define/*"
     },
     {
       "name": "Network",
-      "source_files": "HTBaseModule/Classes/Network/*.{h,m}",
       "dependencies": {
         "HTBaseModule/Define": [
 
         ]
-      }
+      },
+      "source_files": "HTBaseModule/Classes/Network/*"
     },
     {
       "name": "Tools",
-      "source_files": "HTBaseModule/Classes/Tools/*.{h,m}",
       "dependencies": {
         "HTBaseModule/Define": [
 
         ]
-      }
+      },
+      "source_files": "HTBaseModule/Classes/Tools/*"
     }
   ]
 }

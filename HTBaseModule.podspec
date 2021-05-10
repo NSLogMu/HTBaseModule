@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTBaseModule'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'A short description of HTBaseModule.'
 
 # This description is used to generate tags and improve search results.
@@ -38,28 +38,27 @@ TODO: Add long description of the pod here.
   # }
   
   s.subspec 'BaseView' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/BaseView/*.{h,m}'
      ss.dependency 'HTBaseModule/Define'
-
+     ss.source_files = 'HTBaseModule/Classes/BaseView/*'
     end
 
   s.subspec 'Category' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Category/*.{h,m}'
-     ss.dependency 'HTBaseModule/Define'
+    ss.dependency 'HTBaseModule/Define'
+     ss.source_files = 'HTBaseModule/Classes/Category/*'
   end
   
   s.subspec 'Define' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Define/*.{h,m}'
+     ss.source_files = 'HTBaseModule/Classes/Define/*'
   end
   
   s.subspec 'Network' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Network/*.{h,m}'
      ss.dependency 'HTBaseModule/Define'
+     ss.source_files = 'HTBaseModule/Classes/Network/*'
   end
   
   s.subspec 'Tools' do |ss|
-     ss.source_files = 'HTBaseModule/Classes/Tools/*.{h,m}'
      ss.dependency 'HTBaseModule/Define'
+     ss.source_files = 'HTBaseModule/Classes/Tools/*'
   end
   
   # s.frameworks = 'UIKit', 'MapKit'
