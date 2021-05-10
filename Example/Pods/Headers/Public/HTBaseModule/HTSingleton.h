@@ -1,0 +1,1 @@
+../../../../../HTBaseModule/Classes/Define/HTSingleton.h
