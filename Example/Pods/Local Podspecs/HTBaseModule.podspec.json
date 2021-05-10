@@ -1,6 +1,6 @@
 {
   "name": "HTBaseModule",
-  "version": "0.2.6",
+  "version": "0.2.8",
   "summary": "A short description of HTBaseModule.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/NSLogMu/HTBaseModule",
@@ -13,13 +13,12 @@
   },
   "source": {
     "git": "https://github.com/NSLogMu/HTBaseModule.git",
-    "tag": "0.2.6"
+    "tag": "0.2.8"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "HTBaseModule/Classes/*.*",
-  "public_header_files": "HTBaseModule/Classes/HTBaseModuleHeader.h",
   "dependencies": {
     "MBProgressHUD": [
       "~> 1.0.0"
@@ -40,48 +39,23 @@
   "subspecs": [
     {
       "name": "BaseView",
-      "dependencies": {
-        "HTBaseModule/Classes": [
-
-        ]
-      },
-      "source_files": "HTBaseModule/Classes/BaseView/*.{h,m}"
+      "source_files": "PLBaseUI/Classes/HTBaseModuleHeader.h"
     },
     {
       "name": "Category",
-      "dependencies": {
-        "HTBaseModule/Classes": [
-
-        ]
-      },
-      "source_files": "HTBaseModule/Classes/Category/*.{h,m}"
+      "source_files": "PLBaseUI/Classes/HTBaseModuleHeader.h"
     },
     {
       "name": "Define",
-      "dependencies": {
-        "HTBaseModule/Classes": [
-
-        ]
-      },
-      "source_files": "HTBaseModule/Classes/Define/*.{h,m}"
+      "source_files": "PLBaseUI/Classes/HTBaseModuleHeader.h"
     },
     {
       "name": "Network",
-      "dependencies": {
-        "HTBaseModule/Classes": [
-
-        ]
-      },
-      "source_files": "HTBaseModule/Classes/Network/*.{h,m}"
+      "source_files": "PLBaseUI/Classes/HTBaseModuleHeader.h"
     },
     {
       "name": "Tools",
-      "dependencies": {
-        "HTBaseModule/Classes": [
-
-        ]
-      },
-      "source_files": "HTBaseModule/Classes/Tools/*.{h,m}"
+      "source_files": "PLBaseUI/Classes/HTBaseModuleHeader.h"
     }
   ]
 }

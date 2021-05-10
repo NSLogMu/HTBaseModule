@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTBaseModule'
-  s.version          = '0.2.8'
+  s.version          = '0.2.9'
   s.summary          = 'A short description of HTBaseModule.'
 
 # This description is used to generate tags and improve search results.
@@ -31,35 +31,36 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'HTBaseModule/Classes/*.*'
-  s.public_header_files = 'HTBaseModule/Classes/HTBaseModuleHeader.h'
+#  s.public_header_files = 'HTBaseModule/Classes/HTBaseModuleHeader.h'
 
   # s.resource_bundles = {
   #   'HTBaseModule' => ['HTBaseModule/Assets/*.png']
   # }
   
   s.subspec 'BaseView' do |ss|
-     ss.dependency 'HTBaseModule/Classes'
      ss.source_files = 'HTBaseModule/Classes/BaseView/*.{h,m}'
+     ss.source_files = 'PLBaseUI/Classes/HTBaseModuleHeader.h'
+
     end
 
   s.subspec 'Category' do |ss|
-     ss.dependency 'HTBaseModule/Classes'
      ss.source_files = 'HTBaseModule/Classes/Category/*.{h,m}'
+     ss.source_files = 'PLBaseUI/Classes/HTBaseModuleHeader.h'
   end
   
   s.subspec 'Define' do |ss|
-     ss.dependency 'HTBaseModule/Classes'
      ss.source_files = 'HTBaseModule/Classes/Define/*.{h,m}'
+     ss.source_files = 'PLBaseUI/Classes/HTBaseModuleHeader.h'
   end
   
   s.subspec 'Network' do |ss|
-     ss.dependency 'HTBaseModule/Classes'
      ss.source_files = 'HTBaseModule/Classes/Network/*.{h,m}'
+     ss.source_files = 'PLBaseUI/Classes/HTBaseModuleHeader.h'
   end
   
   s.subspec 'Tools' do |ss|
-     ss.dependency 'HTBaseModule/Classes'
      ss.source_files = 'HTBaseModule/Classes/Tools/*.{h,m}'
+     ss.source_files = 'PLBaseUI/Classes/HTBaseModuleHeader.h'
   end
   
   # s.frameworks = 'UIKit', 'MapKit'
