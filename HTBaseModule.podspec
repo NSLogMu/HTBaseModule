@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTBaseModule'
-  s.version          = '0.2.7'
+  s.version          = '0.2.8'
   s.summary          = 'A short description of HTBaseModule.'
 
 # This description is used to generate tags and improve search results.
@@ -38,22 +38,27 @@ TODO: Add long description of the pod here.
   # }
   
   s.subspec 'BaseView' do |ss|
-       ss.source_files = 'HTBaseModule/Classes/BaseView/*.{h,m}'
+     ss.dependency 'HTBaseModule/Classes'
+     ss.source_files = 'HTBaseModule/Classes/BaseView/*.{h,m}'
     end
 
   s.subspec 'Category' do |ss|
+     ss.dependency 'HTBaseModule/Classes'
      ss.source_files = 'HTBaseModule/Classes/Category/*.{h,m}'
   end
   
   s.subspec 'Define' do |ss|
+     ss.dependency 'HTBaseModule/Classes'
      ss.source_files = 'HTBaseModule/Classes/Define/*.{h,m}'
   end
   
   s.subspec 'Network' do |ss|
+     ss.dependency 'HTBaseModule/Classes'
      ss.source_files = 'HTBaseModule/Classes/Network/*.{h,m}'
   end
   
   s.subspec 'Tools' do |ss|
+     ss.dependency 'HTBaseModule/Classes'
      ss.source_files = 'HTBaseModule/Classes/Tools/*.{h,m}'
   end
   
