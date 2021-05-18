@@ -14,18 +14,18 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - HTBaseModule (0.3.3):
+  - HTBaseModule (0.3.4):
     - AFNetworking (~> 4.0)
-    - HTBaseModule/BaseView (= 0.3.3)
-    - HTBaseModule/Category (= 0.3.3)
-    - HTBaseModule/Define (= 0.3.3)
-    - HTBaseModule/Network (= 0.3.3)
-    - HTBaseModule/Tools (= 0.3.3)
+    - HTBaseModule/BaseView (= 0.3.4)
+    - HTBaseModule/Category (= 0.3.4)
+    - HTBaseModule/Define (= 0.3.4)
+    - HTBaseModule/Network (= 0.3.4)
+    - HTBaseModule/Tools (= 0.3.4)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/BaseView (0.3.3):
+  - HTBaseModule/BaseView (0.3.4):
     - AFNetworking (~> 4.0)
     - HTBaseModule/Category
     - HTBaseModule/Define
@@ -34,20 +34,20 @@ PODS:
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/Category (0.3.3):
+  - HTBaseModule/Category (0.3.4):
     - AFNetworking (~> 4.0)
     - HTBaseModule/Define
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/Define (0.3.3):
+  - HTBaseModule/Define (0.3.4):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/Network (0.3.3):
+  - HTBaseModule/Network (0.3.4):
     - AFNetworking (~> 4.0)
     - HTBaseModule/Category
     - HTBaseModule/Define
@@ -55,7 +55,7 @@ PODS:
     - MBProgressHUD (~> 1.0.0)
     - MJExtension (~> 2.5.6)
     - YYKit
-  - HTBaseModule/Tools (0.3.3):
+  - HTBaseModule/Tools (0.3.4):
     - AFNetworking (~> 4.0)
     - Masonry (~> 0.6.2)
     - MBProgressHUD (~> 1.0.0)
@@ -85,7 +85,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  HTBaseModule: ffded95eceaee859169e9ce411ef7ea6723aff90
+  HTBaseModule: 7bc26a5a663a53f3c9d4599d91796d118718a8b2
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: b8c1321a77d91bcc007b94d38cbf5383c95ea30e

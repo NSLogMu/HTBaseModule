@@ -21,6 +21,11 @@
 
 @implementation HTBaseViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
 //设置navgation bar title
 - (void)setNavigationItemTitle:(NSString *)title{
     
@@ -117,11 +122,10 @@
 }
 //设置navigationItem leftItem
 - (void)leftItemWithImage:(NSString *)imageName
-                andAction:(SEL)action
-{
+                andAction:(SEL)action{
     UIButton *button_ = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 40)];
     [button_ addTarget:self action:action forControlEvents:(UIControlEventTouchUpInside)];
-    [button_ setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [button_ setImage:[UIImage imageNamedWithBaseUI:imageName owner:self] forState:UIControlStateNormal];
     [button_ setImageEdgeInsets:UIEdgeInsetsMake(0, -50, 0, 0)];
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:button_];
     
@@ -134,22 +138,19 @@
 }
 
 //设置backButton
-- (void)addBackButton
-{
+- (void)addBackButton{
     [self leftItemWithImage:@"blackBack" andAction:@selector(backToPrevious)];
 }
 
-- (void)backToPrevious
-{
+- (void)backToPrevious{
     //    [self.navigationController popViewControllerAnimated:YES];
     [self.navigationController popViewControllerAnimated:YES ];
 }
 
-- (void)leftItemWithImage:(NSString *)imageName
-{
+- (void)leftItemWithImage:(NSString *)imageName{
     UIImageView *imageView_ = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 58, 29)];
     imageView_.backgroundColor = [UIColor clearColor];
-    imageView_.image = [UIImage imageNamed:imageName];
+    imageView_.image = [UIImage imageNamedWithBaseUI:imageName owner:self];
     
     UIBarButtonItem * leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:imageView_];
     [self.navigationItem setLeftBarButtonItem:leftBarButtonItem];

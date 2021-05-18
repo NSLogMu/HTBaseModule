@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTBaseModule'
-  s.version          = '0.3.4'
+  s.version          = '0.3.5'
   s.summary          = 'A short description of HTBaseModule.'
 
 # This description is used to generate tags and improve search results.
@@ -33,9 +33,9 @@ TODO: Add long description of the pod here.
   s.source_files = 'HTBaseModule/Classes/*.*'
   s.public_header_files = 'HTBaseModule/Classes/HTBaseModuleHeader.h'
 
-  # s.resource_bundles = {
-  #   'HTBaseModule' => ['HTBaseModule/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'HTBaseModule' => ['HTBaseModule/Assets/*']
+   }
   
   s.subspec 'BaseView' do |ss|
      ss.dependency 'HTBaseModule/Category'
@@ -69,4 +69,5 @@ TODO: Add long description of the pod here.
    s.dependency 'AFNetworking', '~> 4.0'
    s.dependency 'YYKit'
    s.dependency 'MJExtension', '~> 2.5.6'
+   s.dependency 'SDWebImage', '~> 5.8.0’
 end

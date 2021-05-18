@@ -557,4 +557,63 @@ static inline CGFloat DegreesToRadians(CGFloat degrees)
         NSLog(@"could not scale image");
     return newImage ;
 }
+
++ (UIImage *)imageNamedWithBaseUI:(NSString *)imageName owner:(id)owner {
+    
+    NSBundle *bundle = [NSBundle bundleForClass:[owner class]];
+    NSURL *url = [bundle URLForResource:@"HTBaseModule" withExtension:@"bundle"];
+    NSBundle *targetBundle = [NSBundle bundleWithURL:url];
+    UIImage *image = [UIImage imageNamed:imageName inBundle:targetBundle compatibleWithTraitCollection:nil];
+    return image;
+}
+
+/**
+ *  imageView展示网络图片
+ *
+ *  @param urlStr  图片地址
+ *  @param phImage 占位图片
+ */
+//-(void)imageWithUrlStr:(NSString *)urlStr
+//               phImage:(UIImage *)phImage{
+//
+//    if(urlStr==nil) {
+//        NSLog(@"错误：URL地址为空");
+//        return;
+//    }
+//
+//    NSURL *url=[NSURL URLWithString:urlStr];
+//
+//    [self sd_setImageWithURL:url placeholderImage:phImage];
+//}
+
+
+/**
+ *  带有进度的网络图片展示
+ *
+ *  @param urlStr         图片地址
+ *  @param phImage        占位图片
+ *  @param progressBlock  进度
+ *  @param completedBlock 完成
+ */
+//-(void)imageWithUrlStr:(NSString *)urlStr phImage:(UIImage *)phImage progressBlock:(SDWebImageDownloaderProgressBlock)progressBlock completedBlock:(SDExternalCompletionBlock)completedBlock{
+//
+//    if(urlStr==nil) {
+//        NSLog(@"错误：URL地址为空");
+//        return;
+//    }
+//    if ([urlStr containsString:@"http"]) {
+//        NSURL *url=[NSURL URLWithString:urlStr];
+//
+//        SDWebImageOptions options = SDWebImageLowPriority | SDWebImageRetryFailed;
+//
+//        [self sd_setImageWithURL:url placeholderImage:phImage options:options progress:progressBlock completed:completedBlock];
+//    }else{//显示本地图片
+//        self.image = [UIImage imageWithContentsOfFile:urlStr];
+//        if (completedBlock) {
+//            completedBlock(self.image, nil, SDImageCacheTypeNone, nil);
+//        }
+//    }
+//
+//}
+
 @end

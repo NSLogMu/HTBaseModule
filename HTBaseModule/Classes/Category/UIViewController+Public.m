@@ -9,6 +9,7 @@
 #import "UIView+Extension.h"
 #import "HTPublicDefine.h"
 #import "UIColor+HTHex.h"
+#import "UIImage+Extension.h"
 @implementation UIViewController (Public)
 
 //设置navgation bar title
@@ -111,7 +112,7 @@
 {
     UIButton *button_ = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 40)];
     [button_ addTarget:self action:action forControlEvents:(UIControlEventTouchUpInside)];
-    [button_ setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [button_ setImage:[UIImage imageNamedWithBaseUI:imageName owner:self] forState:UIControlStateNormal];
     [button_ setImageEdgeInsets:UIEdgeInsetsMake(0, -50, 0, 0)];
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:button_];
     

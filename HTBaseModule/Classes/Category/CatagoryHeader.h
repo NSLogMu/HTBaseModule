@@ -13,6 +13,7 @@
 #import "UIView+Extension.h"
 #import "UIColor+HTHex.h"
 #import "UIViewController+Public.h"
+#import "UITableView+AllowsHeaderViewsToFloat.h"
 
 
 #endif /* CatagoryHeader_h */

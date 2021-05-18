@@ -8,15 +8,30 @@
 #ifndef HTBaseModuleHeader_h
 #define HTBaseModuleHeader_h
 
-#import "HTRegexTool.h"
-#import "PLDeviceInfo.h"
+// 分类
 #import "NSString+Extension.h"
-#import "HTPublicDefine.h"
+#import "UIColor+HTHex.h"
+#import "UIImage+Extension.h"
+#import "UITableView+AllowsHeaderViewsToFloat.h"
 #import "UIView+Extension.h"
+#import "UIViewController+Public.h"
+
+//Base
+#import "HTBaseNavigationController.h"
+#import "HTBaseTabBarController.h"
+#import "HTBaseTableView.h"
+#import "HTBaseViewController.h"
+#import "HTBaseLabel.h"
+#import "HTBaseButton.h"
+#import "HTBaseTableViewCell.h"
+
+#import "PLDeviceInfo.h"
 #import "MJExtension.h"
 #import "Masonry.h"
-#import "HTAccountTool.h"
 #import "HUDHelp.h"
-#import "UIImage+Extension.h"
-#import "UIColor+HTHex.h"
+#import "HTAccount.h"
+#import "HTAccountTool.h"
+#import "HTPublicDefine.h"
+#import "HTRegexTool.h"
+
 #endif /* HTBaseModuleHeader_h */

@@ -7,12 +7,19 @@
 //
 
 #import "HTAppDelegate.h"
-
+#import "HTViewController.h"
+#import <HTBaseModule/HTBaseNavigationController.h>
 @implementation HTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    HTViewController *vc = [[HTViewController alloc]init];
+    HTBaseNavigationController *navController = [[HTBaseNavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
